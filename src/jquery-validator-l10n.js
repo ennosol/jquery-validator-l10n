@@ -93,6 +93,14 @@ $.fn.convertLaraRulesToMessages = function(options) {
             message.replace(":max", params[1]);
             return message;
 
+        },
+
+        between_digits : function (message, params) {
+
+            message.replace(":min", params[0]);
+            message.replace(":max", params[1]);
+            return message;
+
         }
 
     };
